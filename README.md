@@ -1,16 +1,15 @@
 # Anomalydetectionoftransactions
-Anomaly detection in transactions means identifying unusual or unexpected patterns within transactions or related activities. These patterns, known as anomalies or outliers, deviate significantly from the expected norm and could indicate irregular or fraudulent behaviour.
+# overview
+Anomaly detection in transactions means identifying unusual or unexpected patterns within transactions or related activities. These patterns, known as anomalies or outliers indicates irregular or fraudulent behaviour.
 # Prerequisites
+1. Pip
+2. Python
+3. Jupyter Notebook
+# Libraries
 1. Pandas
 2. Matplotlib
 3. Seaborn
 4. Scikit-learn
-# Description
-1. I create a virtual environment
-2. Then I have used the transaction_anomalies_dataset.csv file for the project
-3. Install the necessary libraries
-4. Run the code for execution
-5. The model I have used is IsolationForest
 # Dataset
 The dataset contains information about various financial transactions, each represented by several features:
 1. Transaction_ID: Unique identifier for each transaction.
@@ -25,6 +24,16 @@ The dataset contains information about various financial transactions, each repr
 10. Gender: Gender of the account holder.
 11. Income: Income of the account holder.
 12. Account_Type: Type of account (e.g., personal, business).
+# Description
+1. Create a virtual environment
+2. Load the transaction_anomalies_dataset.csv file for the project
+3. Install the necessary libraries
+4. Run the code for execution
+5. Predict the model by using IsolationForest
+# Advantages of Isolation Forests
+1. Effective for Unlabeled Data: Isolation Forests do not require labeled data (normal vs. anomaly) for training, making them suitable for scenarios where labeled data is scarce.
+2. Efficient for High-Dimensional Data: The algorithm scales well with high-dimensional data sets, which can be challenging for other anomaly detection methods.
+3. Robust to Noise: Isolation Forests are relatively insensitive to noise and outliers within the data, making them reliable for real-world datasets.
 # Evaluation metrics
 Precision: Normal: 1.00 Anomaly: 1.00
 Recall: Normal: 1.00 Anomaly: 1.00
